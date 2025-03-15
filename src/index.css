@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #e65526;
+  --primary-glow: rgba(230, 85, 38, 0.25);
+  --background-color: #191919;
+  --text-color: #ffffff;
+  --card-bg: #252525;
+  --card-border: #333333;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.light-point {
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: var(--primary-glow);
+  filter: blur(150px);
+  pointer-events: none;
+}
+
+.light-point-top {
+  top: -300px;
+  left: -300px;
+}
+
+.light-point-bottom {
+  bottom: -300px;
+  right: -300px;
+}
+
+/* Resto dos estilos permanecem iguais */
